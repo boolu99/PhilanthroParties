@@ -1,3 +1,34 @@
 body {
   background: pink;
+  margin: 0;
+}
+
+nav {
+  position: fixed;
+}
+
+main {
+  padding-top: 40px;
+}
+
+#intro {
+}
+#intro img {
+  max-width: 500px;
+  width: 90%;
+}
+
+#about {
+}
+
+#reviews {
+}
+
+#signup {
+}
+
+#author {
+}
+
+#contact {
 }
