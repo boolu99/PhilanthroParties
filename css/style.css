@@ -11,14 +11,72 @@ main {
   padding-top: 40px;
 }
 
+p, h1, h2, h3, h4 {
+  margin: 0;
+  padding: 0;
+}
+
+.block {
+  display: block;
+}
+.inline-block {
+  display: inline-block;
+}
+
+.section {
+  padding: 30px 0;
+}
+
 #intro {
+  text-align: center;
 }
 #intro img {
-  max-width: 500px;
   width: 90%;
+  max-width: 500px;
+}
+#intro .cont {
+  display: inline-block;
+  vertical-align: middle;
+}
+#intro .cont h1 {
+  margin: 0.33em 0;
+}
+#intro .cont p {
+  width: 90%;
+  max-width: 500px;
+  text-align: left;
+  margin: 0 auto;
+}
+#buy_btns .buy-btn {
+  margin: 0.66em 1em;
+  padding: 0.66em 1em;
+  border: 1px solid black;
+  border-radius : 3px;
+  color: black;
+  text-decoration: none;
+}
+#buy_btns .buy-btn:hover {
+  background: lightblue;
+  color: white;
 }
 
 #about {
+  text-align: center;
+}
+
+#about .cont{
+  width: 90%;
+  max-width: 500px;
+  vertical-align: middle;
+}
+
+#about .img-cont{
+  width: 90%;
+  max-width: 500px;
+}
+
+#about .img-cont img{
+  width: 100%;
 }
 
 #reviews {
