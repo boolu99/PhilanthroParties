@@ -28,7 +28,7 @@ p, h1, h2, h3, h4 {
 
 #intro {
   text-align: center;
-  background-color: rgb(203, 234, 219);
+  background-color: rgb(203, 240, 228);
 }
 #intro img {
   width: 80%;
@@ -73,12 +73,27 @@ p, h1, h2, h3, h4 {
 
 #about {
   text-align: center;
-  background-color: rgb(255, 250, 247);
+  background-color: rgb(176, 224, 230);
+  vertical-align: middle;
 }
 
 #about .cont h1 {
   margin: 0.33em 0;
   font-family: 'Raleway', sans-serif;
+  color: rgb(68, 68, 68);
+  text-align: left;
+
+}
+
+#about .cont p{
+  width: 90%;
+  max-width: 500px;
+  text-align: left;
+  margin: 0;
+  color: rgb(89, 89, 89);
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 20px;
+  line-height: 30px;
 }
 
 #about .cont{
@@ -96,24 +111,55 @@ p, h1, h2, h3, h4 {
   width: 100%;
 }
 
-#reviews {
+#columns {
+  vertical-align: middle;
+  font-family: 'Raleway', sans-serif;
+  background-color: rgb(176, 224, 230);
   text-align: center;
-  background-color: rgb(177, 215, 235);
+  padding: 0 0;
+}
+
+#columns .text-cont{
+  width: 20%;
+  max-width: 500px;
+  padding: 0.66em;
+  margin: 1.5em;
+  vertical-align: top;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  border-radius: 5px;
+  border-style: solid;
+  border-color: white;
+  border-width: 1px;
+  text-align: left;
+  color: rgb(89, 89, 89);
+  background-color: rgb(218, 238, 253);
+}
+
+#reviews {
+  background-color: rgb(218, 238, 253);
+
 }
 
 #reviews .cont h1 {
   margin: 0.33em 0 0.66em 0;
-  text-align: center;
   font-family: 'Raleway', sans-serif;
+  color: rgb(68, 68, 68);
+  text-align: center;
 }
 
 #reviews .cont {
-  width: 30%;
+  width: 20%;
   max-width: 500px;
-  margin: 0 auto;
+  padding: 0.66em;
+  margin: 1.5em;
+  text-align: left;
   vertical-align: middle;
-  padding: 0.33em 0.33em;
-  margin: 0.33em 0.33em;
+  font-family: 'Josefin Sans', sans-serif;
+  color: rgb(89, 89, 89);
+  font-size: 20px;
+  line-height: 30px;
 }
 
 #signup {
@@ -126,12 +172,18 @@ p, h1, h2, h3, h4 {
 #author .cont h1 {
   margin: 0.33em 0;
   font-family: 'Raleway', sans-serif;
+  color: rgb(68, 68, 68);
 }
 
 #author .cont{
   width: 90%;
   max-width: 500px;
   vertical-align: middle;
+  text-align: left;
+  font-family: 'Josefin Sans', sans-serif;
+  color: rgb(89, 89, 89);
+  font-size: 20px;
+  line-height: 30px;
 }
 
 #author .img-cont{
