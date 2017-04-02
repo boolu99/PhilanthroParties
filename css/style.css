@@ -8,14 +8,15 @@ nav {
   background-color: rgb(206,149,194);
   opacity: 0.9;
   width: 100%;
+  z-index: 500;
 }
 
-li {
+nav li {
   display: inline;
   text-align: right;
 }
 
-li a{
+nav li a{
   color: rgb(68, 68, 68);
   text-decoration: none;
   font-size: 18px;
@@ -23,30 +24,45 @@ li a{
   transition: color 0.33s ease;
 }
 
-li a:hover {
+nav li a:hover {
   color: rgb(105, 105, 105);
 }
 
-li img {
+nav li img {
   display: inline-block;
   width: 2.5%;
   max-width: 100px;
   min-width: 30px;
-  float: right;
   padding: 10px;
   margin-top: -15px;
-
 }
 
-ul {
+nav li.social {
+  float: right;
+}
+
+nav ul {
   font-family: 'Raleway', sans-serif;
   margin-right: 20px;
   vertical-align: middle;
 }
 
+#burger {
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  position: fixed;
+  right: 0;
+  top: 0;
+}
+
+#burger img {
+  width: 100%;
+}
 
 main {
   padding-top: 48px;
+  background-color: rgb(203, 240, 228);
 }
 
 p, h1, h2, h3, h4 {
@@ -171,6 +187,14 @@ button:hover {
   border-radius: 10px;
 }
 
+#slideshow img{
+  position: absolute;
+  top: 10em;
+  left: 0;
+  width: 100%;
+}
+
+
 #columns {
   vertical-align: middle;
   font-family: 'Raleway', sans-serif;
@@ -270,6 +294,40 @@ button:hover {
 }
 
 @media screen and (max-width: 768px) {
+   nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      border-width: 1px;
+      display: none;
+  }
+  nav.active ul{
+    display: block;
+  }
+}
+
+
+
+@media screen and (max-width: 768px) {
+  nav li {
+      display: block;
+      text-align: center;
+  }
+  nav li.social {
+    float: none;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  nav li:hover {
+      background-color: rgb(150,109,142);
+      color: rgb(50, 50, 50);
+  }
+}
+
+@media screen and (max-width: 768px) {
   #columns .text-cont {
     /*display: block;*/
     width: 90%;
@@ -278,8 +336,6 @@ button:hover {
   }
 }
 
-@media screen and (max-width: 480px) {
-}
 
 @media screen and (max-width: 834px) {
   #reviews .text-cont {
