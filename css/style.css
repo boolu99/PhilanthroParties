@@ -60,11 +60,16 @@ nav li.social {
 
 #burger {
   width: 40px;
-  height: 40px;
   display: none;
   position: fixed;
   right: 0;
   top: 0;
+  padding: 0.66em;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+nav.active #burger {
+  background-color: rgba(255, 255, 255, 0);
 }
 
 #burger img {
@@ -290,10 +295,6 @@ button.about:hover {
   text-align: left;
 }
 
-#author .img-cont{
-  margin-right: -5px;
-}
-
 #author img{
   width: 80%;
   max-width: 550px;
@@ -301,8 +302,6 @@ button.about:hover {
   margin: 1em 1em;
 }
 
-#contact {
-}
 
 @media screen and (max-width: 768px) {
    nav ul {
@@ -319,18 +318,22 @@ button.about:hover {
   #burger {
     display: inline-block;
   }
-}
-
-
-@media screen and (max-width: 768px) {
   nav li {
-      display: block;
-      text-align: center;
-      margin: 0.33em;
+    display: table;
+    height: 50px;
+    width: 100%;
+    text-align: center;
+  }
+  nav li a {
+    display: table-cell;
+    vertical-align: middle;
   }
   nav li.social {
     float: none;
     transition: none;
+    display: block;
+    text-align: center;
+    padding-bottom: 0.33em;
   }
 
   nav li:hover {
@@ -341,6 +344,19 @@ button.about:hover {
   nav li a:hover {
     transition: none;
   }
+
+  nav li.social a {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: inline-block;
+  }
+
+  nav li.social img {
+    padding: 5px 10px;
+    margin-top: 0;
+  }
+
   #columns .text-cont {
     width: 90%;
     margin: 1em auto;
