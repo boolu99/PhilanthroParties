@@ -1,6 +1,7 @@
 function scrollToSection(event){
   var section=document.getElementById(event.target.getAttribute("data-section"))
-  var targetY=section.getBoundingClientRect().top+window.pageYOffset
+  var targetY=section.getBoundingClientRect().top + window.pageYOffset - 50
+  console.log(section.getBoundingClientRect().top, window.pageYOffset, targetY)
   window.scroll(0,targetY)
   if (nav.className.indexOf("active")> -1) {
     nav.className = nav.className.replace( /(?:^|\s)active(?!\S)/ , '' )

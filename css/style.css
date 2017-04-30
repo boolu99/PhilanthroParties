@@ -33,6 +33,7 @@ nav li a{
   margin: 0 10px 0 0;
   /*padding: 5px;*/
   transition: color 0.33s ease;
+  cursor: pointer;
 }
 
 nav li a:hover {
@@ -355,11 +356,17 @@ font-family: "andale mono", "monotype.com", monaco, "courier new", courier, mono
 
   nav li:hover {
       transition: all 0.33s ease;
-      background-color: rgba(206,149,194,1)
+      background-color: rgba(206,149,194,0.6)
 
   }
+
+  nav li.social:hover{
+    background-color: inherit;
+  }
+
   nav li a:hover {
     transition: none;
+    color: rgb(68, 68, 68);
   }
 
   nav li.social a {
