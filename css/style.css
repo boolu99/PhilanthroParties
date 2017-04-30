@@ -33,11 +33,11 @@ nav li a{
   margin: 0 10px 0 0;
   /*padding: 5px;*/
   transition: color 0.33s ease;
-  cursor: pointer;
 }
 
 nav li a:hover {
   color: rgb(105, 105, 105);
+
 }
 
 nav li.social a {
@@ -191,6 +191,10 @@ button.about:hover {
 #about .img-cont{
   width: 90%;
   max-width: 500px;
+  display: block;
+  margin: 0 auto;
+  height: 300px;
+  max-height: 55vw;
 }
 
 #about img{
@@ -239,7 +243,16 @@ button.about:hover {
 
 #reviews {
   background-color: rgb(218, 238, 253);
+}
 
+#reviews .blurb:before {
+content:"“";
+display: inline-block;
+vertical-align: middle;
+font-size: 2.33em;
+margin-right: 0.2em;
+line-height: 0.5em;
+font-family: "andale mono", "monotype.com", monaco, "courier new", courier, monospace;
 }
 
 #reviews {
@@ -304,10 +317,6 @@ button.about:hover {
   width: 100%;
   height: auto;
   border-radius: 10px;
-}
-
-#contact {
-  min-height: 500px;
 }
 
 
