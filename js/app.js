@@ -29,7 +29,6 @@
 
   for (var i = 0; i < links.length; i++) {
     links[i].addEventListener("click", function() {
-      console.log("blug")
       if (nav.className.indexOf("active")> -1) {
         nav.className = nav.className.replace( /(?:^|\s)active(?!\S)/ , '' )
         return

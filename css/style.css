@@ -168,16 +168,25 @@ button.about:hover {
   vertical-align: middle;
 }
 
-#about .cont h1 {
+#about .cont{
+  width: 90%;
+  max-width: 500px;
+  vertical-align: middle;
+}
+
+#about .text-cont {
+  padding-bottom: 1.66em;
+  text-align: left;
+}
+
+#about .text-cont h1 {
   margin: 0.33em 0;
   font-family: 'Raleway', sans-serif;
   color: rgb(68, 68, 68);
-  text-align: left;
-
+  /*text-align: left;*/
 }
 
-#about .cont p{
-  width: 90%;
+#about .text-cont p{
   max-width: 500px;
   text-align: left;
   margin: 0;
@@ -187,11 +196,7 @@ button.about:hover {
   line-height: 30px;
 }
 
-#about .cont{
-  width: 90%;
-  max-width: 500px;
-  vertical-align: middle;
-}
+
 
 #about .img-cont{
   width: 90%;
@@ -220,7 +225,7 @@ button.about:hover {
   font-family: 'Raleway', sans-serif;
   background-color: rgb(176, 224, 230);
   text-align: center;
-  padding: 0 0;
+  padding: 0 0 40px;
 }
 
 #columns .text-cont{
@@ -289,10 +294,10 @@ font-family: "andale mono", "monotype.com", monaco, "courier new", courier, mono
 }
 
 #author .text-cont{
-  /*width: 50%;*/
   max-width: 700px;
+  padding: 0 1.66em;
+  box-sizing: border-box;
   text-align: center;
-  margin-left: 1.66em;
   vertical-align: middle;
 }
 
@@ -324,6 +329,20 @@ font-family: "andale mono", "monotype.com", monaco, "courier new", courier, mono
   border-radius: 10px;
 }
 
+@media screen and (max-width: 834px) {
+  #reviews .text-cont {
+    display: block;
+    width: 90%;
+    margin: 1em auto;
+    box-sizing: border-box;
+  }
+  #reviews .text-cont {
+    display: block;
+    width: 90%;
+    margin: 1em auto;
+    box-sizing: border-box;
+  }
+}
 
 @media screen and (max-width: 768px) {
    nav ul {
@@ -394,27 +413,16 @@ font-family: "andale mono", "monotype.com", monaco, "courier new", courier, mono
     line-height: 50px;
   }
 
+  #about .text-cont {
+    text-align: center;
+  }
+
   #author .img-cont {
     display: block;
   }
-}
 
-@media screen and (max-width: 834px) {
-  #reviews .text-cont {
-    display: block;
-    width: 90%;
-    margin: 1em auto;
-    box-sizing: border-box;
-  }
-  #reviews .text-cont {
-    display: block;
-    width: 90%;
-    margin: 1em auto;
-    box-sizing: border-box;
+  #author .text-cont p {
+    font-size: 1em;
+    line-height: 1.5em;
   }
 }
-/*    @media screen and (max-width: 1074px) {
-      #author .text-cont {
-        padding: 1.5em;
-      }
-    }*/
