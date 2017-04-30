@@ -34,6 +34,7 @@ nav li a{
   margin: 0 10px 0 0;
   /*padding: 5px;*/
   transition: color 0.33s ease;
+  cursor: pointer;
 }
 
 nav li a:hover {
@@ -304,6 +305,10 @@ button.about:hover {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+
+#contact {
+  min-height: 500px;
 }
 
 
