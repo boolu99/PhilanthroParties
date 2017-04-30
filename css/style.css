@@ -10,8 +10,7 @@ p, ul, h1, h2, h3, h4 {
 nav {
   position: fixed;
   display: inline;
-  background-color: rgb(206,149,194);
-  opacity: 0.9;
+  background-color: rgba(206,149,194,0.9);
   width: 100%;
   z-index: 500;
 }
@@ -346,9 +345,9 @@ button.about:hover {
   }
 
   nav li:hover {
-      background-color: rgb(150,109,142);
-      color: rgb(50, 50, 50);
-      transition: 0.33s ease;
+      transition: all 0.33s ease;
+      background-color: rgba(206,149,194,1)
+
   }
   nav li a:hover {
     transition: none;
