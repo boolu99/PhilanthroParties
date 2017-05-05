@@ -347,11 +347,11 @@ font-family: "andale mono", "monotype.com", monaco, "courier new", courier, mono
   font-family: 'Raleway', sans-serif;
   color: rgb(68, 68, 68);
   background-color: rgb(142,115,169);
+  text-align: center;
+  margin-bottom: 0px;
+  min-height: 10px;
 }
 
-#contact {
-  text-align: center;
-}
 
 #contact h1 {
   display: block;
@@ -374,12 +374,6 @@ font-family: "andale mono", "monotype.com", monaco, "courier new", courier, mono
 
 #contact a:hover {
   color: rgb(180, 180, 180);
-}
-
-#contact {
-  min-height: 500px;
-  display: table;
-  width: 100%;
 }
 
 #contact .cont {
@@ -480,17 +474,10 @@ font-family: "andale mono", "monotype.com", monaco, "courier new", courier, mono
     display: block;
   }
 
-  #author .text-cont p {
-    font-size: 1em;
-    line-height: 1.5em;
-  }
 }
-<<<<<<< HEAD
 @media screen and (max-width: 375px) {
   #contact p {
     display: block;
     margin: 1.5em 0em 0.66em;
   }
 }
-=======
->>>>>>> 7ce9235399438799cf97b15fde0f13fcf9da3905
