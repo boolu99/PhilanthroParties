@@ -38,7 +38,6 @@ nav li a{
 
 nav li a:hover {
   color: rgb(105, 105, 105);
-
 }
 
 nav li.social a {
@@ -98,8 +97,8 @@ a.about.download {
   transition: background 0.33s ease;
 }
 
-button.about:hover {
-  background: rgb(69, 201, 177);
+a.about.download:hover {
+background: rgb(69, 201, 177);
 }
 
 .block {
@@ -206,6 +205,12 @@ button.about:hover {
   width: 100%;
   border-radius: 10px;
 }
+
+#download_info {
+  font-family: 'Raleway', sans-serif;
+  color: rgb(68, 68, 68);
+}
+
 
 #slideshow img{
   position: absolute;
@@ -324,6 +329,38 @@ font-family: "andale mono", "monotype.com", monaco, "courier new", courier, mono
   border-radius: 10px;
 }
 
+#contact {
+  font-family: 'Raleway', sans-serif;
+  color: rgb(68, 68, 68);
+  background-color: rgb(142,115,169);
+}
+
+#contact {
+  text-align: center;
+}
+
+#contact h1 {
+  display: block;
+  font-size: 30px;
+  margin: 0 0 0.66em 0;
+  text-align: center;
+  color: rgb(60,60,60);
+}
+
+#contact p {
+  display: inline;
+  text-align: center;
+}
+
+#contact a{
+    color: rgb(210, 210, 210);
+    transition: all 0.33s ease;
+    margin: 1em;
+}
+
+#contact a:hover {
+  color: rgb(180, 180, 180);
+}
 
 @media screen and (max-width: 768px) {
    nav ul {
@@ -413,8 +450,9 @@ font-family: "andale mono", "monotype.com", monaco, "courier new", courier, mono
     box-sizing: border-box;
   }
 }
-/*    @media screen and (max-width: 1074px) {
-      #author .text-cont {
-        padding: 1.5em;
-      }
-    }*/
+@media screen and (max-width: 375px) {
+  #contact p {
+    display: block;
+    margin: 1.5em 0em 0.66em;
+  }
+}
