@@ -343,6 +343,15 @@ font-family: "andale mono", "monotype.com", monaco, "courier new", courier, mono
   border-radius: 10px;
 }
 
+#LWlink{
+  color: inherit;
+  transition: all 0.33 ease;
+}
+
+#LWlink:hover{
+  color: rgb(110,110,110);
+}
+
 #contact {
   font-family: 'Raleway', sans-serif;
   color: rgb(68, 68, 68);
@@ -409,9 +418,11 @@ font-family: "andale mono", "monotype.com", monaco, "courier new", courier, mono
   nav.active ul{
     display: block;
   }
+
   #burger {
     display: inline-block;
   }
+
   nav li {
     display: table;
     height: 50px;
