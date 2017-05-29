@@ -125,6 +125,10 @@ background: rgb(69, 201, 177);
   outline: none;
 }
 
+.twitter-timeline {
+  width: 100px;
+}
+
 #intro {
   text-align: center;
   background-color: rgb(203, 240, 228);
@@ -138,26 +142,26 @@ background: rgb(69, 201, 177);
   vertical-align: middle;
 }
 #intro .cont h1 {
-  margin: 0.33em 0;
+  margin: 0.33em 0.33em;
   color: rgb(68, 68, 68);
   font-size: 45px;
   font-family: 'Raleway', sans-serif;
   text-align: center;
 }
 #intro .cont p {
-  width: 90%;
-  max-width: 500px;
+  width: 100%;
+  max-width: 600px;
   text-align: left;
   margin: 0 auto;
   color: rgb(89, 89, 89);
   font-family: 'Josefin Sans', sans-serif;
   font-size: 24px;
-  word-spacing: 2px;
+  word-spacing: 1px;
   line-height: 35px;
 }
 #buy_btns .buy-btn {
-  margin: 1em 1em;
-  padding: 0.66em 1em;
+  margin: 0.66em 0.66em;
+  padding: 0.66em 0.66em;
   border-radius : 5px;
   text-decoration: none;
   font-family: 'Raleway', sans-serif;
@@ -371,14 +375,16 @@ font-family: "andale mono", "monotype.com", monaco, "courier new", courier, mono
 }
 
 #contact p {
-  display: inline;
   text-align: center;
+  margin: 2em 2em;
 }
 
 #contact a{
-    color: rgb(210, 210, 210);
-    transition: all 0.33s ease;
-    margin: 1em;
+  display: inline;
+  text-align: center;
+  color: rgb(210, 210, 210);
+  transition: all 0.33s ease;
+  margin: 1em;
 }
 
 #contact a:hover {
@@ -390,6 +396,23 @@ font-family: "andale mono", "monotype.com", monaco, "courier new", courier, mono
   text-align: center;
   vertical-align: middle;
 }
+
+#contact img {
+  width: 60%;
+  margin: 2em 1em;
+  border-radius: 5px;
+}
+
+#copyright {
+  background-color: rgb(57, 37, 61)
+}
+
+#copyright p {
+  font-family: 'Raleway', sans-serif;
+  color: rgb(180, 180, 180);
+  margin-left: 1em;
+}
+
 
 @media screen and (max-width: 834px) {
   #reviews .text-cont {
@@ -468,6 +491,11 @@ font-family: "andale mono", "monotype.com", monaco, "courier new", courier, mono
     margin-top: 0;
   }
 
+  #intro .text-cont {
+    padding-left: 0.33em;
+    padding-right: 0.33em;
+  }
+
   #columns .text-cont {
     width: 90%;
     margin: 1em auto;
@@ -486,6 +514,17 @@ font-family: "andale mono", "monotype.com", monaco, "courier new", courier, mono
   }
 
 }
+
+@media screen and (max-width: 600px) {
+
+  #buy_btns .buy-btn {
+  display: block;
+  margin: 0.33em 0.33em;
+  min-width: 150px;
+  float: left;
+  }
+}
+
 @media screen and (max-width: 375px) {
   #contact p {
     display: block;
