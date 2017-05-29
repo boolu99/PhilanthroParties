@@ -126,7 +126,10 @@ background: rgb(69, 201, 177);
 }
 
 .twitter-timeline {
-  width: 100px;
+  width: 90% !important;
+  max-width: 600px !important;
+  display: block !important;
+  margin: 40px auto !important;
 }
 
 #intro {
@@ -398,9 +401,11 @@ font-family: "andale mono", "monotype.com", monaco, "courier new", courier, mono
 }
 
 #contact img {
-  width: 60%;
-  margin: 2em 1em;
-  border-radius: 5px;
+    width: 90%;
+    max-width: 700px;
+    margin: 2em auto;
+    border-radius: 5px;
+    display: block;
 }
 
 #copyright {
@@ -515,13 +520,12 @@ font-family: "andale mono", "monotype.com", monaco, "courier new", courier, mono
 
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 630px) {
 
   #buy_btns .buy-btn {
-  display: block;
+  display: inline-block;
   margin: 0.33em 0.33em;
-  min-width: 150px;
-  float: left;
+  min-width: 40%;
   }
 }
 
